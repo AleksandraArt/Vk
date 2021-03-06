@@ -6,6 +6,7 @@ public class Post {
     int postId;//пост
     int date;//дата создания поста
     int replyPostId;//ответ на пост
+    int ownerId;//размещение поста
     boolean canPin;//закрепление поста
     boolean canDelete;//удаление поста
     boolean canEdit;//редактироват пост
@@ -21,7 +22,8 @@ public class Post {
     public void setDate(int date) {this.date = date;}
     public int getReplyPostId () {return replyPostId;}
     public void setReplyPostId (int replyPostId) {this.replyPostId = replyPostId;}
-
+    public int getOwnerId() {return ownerId;}
+    public void setOwnerId(int ownerId) {this.ownerId = ownerId;}
     public boolean isCanPin() {return canPin;}
     public void setCanPin(boolean canPin) {this.canPin = canPin;}
 
